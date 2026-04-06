@@ -1,12 +1,21 @@
-#include <stdio.h>
-#include <conio.h>
-#include <string.h>
-int main(void){
-char str [100]="Aisyah Zahra";
-char karakter='Z';
-char *hasil;
-hasil=strchr(str,karakter);
-printf("Hasil Peubah :%s\n",hasil); 
-printf("Karakter %c ditemukan pada indeks ke-%d",karakter,(hasilstr));
-getch();
-return 0; }
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main(void) {
+    char str[100] = "Andre Bastian";
+    char karakter = 'B';
+    char *hasil;
+    
+    hasil = strchr(str, karakter);
+    
+    if (hasil != nullptr) {
+        cout << "Hasil Peubah :" << hasil << endl; 
+        cout << "Karakter " << karakter << " ditemukan pada indeks ke-" << (hasil - str) << endl;
+    } else {
+        cout << "Karakter " << karakter << " tidak ditemukan." << endl;
+    }
+    
+    return 0; 
+}
